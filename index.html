@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjaya</title>
+    <link rel="icon" href="dist/img/logo/logo.png">
+
+    <link rel="stylesheet" href="dist/css/output.css">
+    <link rel="stylesheet" href="dist/css/fontawesome.css">
+</head>
+<body>
+    
+    <header class="absolute top-0 left-0 w-full flex items-center justify-center z-10  px-2 lg:px-0">
+        <div class="container">
+            <div class="flex w-full items-center justify-between relative self-center lg:h-16">
+                <div class="px-4">
+                    <a href="#">
+                        <img src="dist/img/Logo/Logo.png" alt="" class="w-9 flex py-4 md:py-0 dark:drop-shadow-lg dark:shadow-white">
+                    </a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="ham" name="ham" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="ham-line transition duration-300 ease-in-out origin-top-right"></span>
+                        <span class="ham-line transition duration-300 ease-in-out"></span>
+                        <span class="ham-line transition duration-300 ease-in-out origin-bottom-right"></span>
+                    </button>
+
+                    <nav id="menu" class="hidden absolute mt-4 py-5 lg:mt-0 bg-[#8f6751] shadow-xl rounded-lg max-w-[200px] w-full right-0 top-16 lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#ten" class="ham-menu">Tentang</a>
+                            </li>
+                            <li class="group">
+                                <a href="#men" class="ham-menu">Menu</a>
+                            </li>
+                            <li class="group">
+                                <a href="#lok" class="ham-menu">Lokasi</a>
+                            </li>
+
+                            <li class="flex items-center justify-center lg:hidden">
+                                <div class="flex flex-wrap">
+                                    <span class="mr-2 text-sm text-salte-500"></span>
+                                    <input type="checkbox" class="hidden" id="dark-toggle">
+                                    <label for="dark-toggle">
+                                        <div class="flex h-6 w-9 cursor-pointer items-center rounded-full bg-slate-300 p-1">
+                                            <div class="toggle-circle h-4 w-4 rounded-full bg-coklat2 transition duration-300 ease-in-out">
+
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <svg id="drl" role="img" width="20" class=" ml-2 dark:fill-white transition duration-150 ease-in-out hidden" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 64.00 64.00" enable-background="new 0 0 64 64" xml:space="preserve" stroke="#000000" stroke-width="0.00064"><g  stroke-width="0"></g><g  stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <circle fill-rule="evenodd" clip-rule="evenodd" cx="32.003" cy="32.005" r="16.001"></circle> <path fill-rule="evenodd" clip-rule="evenodd" d="M12.001,31.997c0-2.211-1.789-4-4-4H4c-2.211,0-4,1.789-4,4 s1.789,4,4,4h4C10.212,35.997,12.001,34.208,12.001,31.997z"></path> <path fill-rule="evenodd" clip-rule="evenodd"d="M12.204,46.139l-2.832,2.833c-1.563,1.562-1.563,4.094,0,5.656 c1.562,1.562,4.094,1.562,5.657,0l2.833-2.832c1.562-1.562,1.562-4.095,0-5.657C16.298,44.576,13.767,44.576,12.204,46.139z"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M32.003,51.999c-2.211,0-4,1.789-4,4V60c0,2.211,1.789,4,4,4 s4-1.789,4-4l-0.004-4.001C36.003,53.788,34.21,51.999,32.003,51.999z"></path> <path fill-rule="evenodd" clip-rule="evenodd"  d="M51.798,46.143c-1.559-1.566-4.091-1.566-5.653-0.004 s-1.562,4.095,0,5.657l2.829,2.828c1.562,1.57,4.094,1.562,5.656,0s1.566-4.09,0-5.656L51.798,46.143z"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M60.006,27.997l-4.009,0.008 c-2.203-0.008-3.992,1.781-3.992,3.992c-0.008,2.211,1.789,4,3.992,4h4.001c2.219,0.008,4-1.789,4-4 C64.002,29.79,62.217,27.997,60.006,27.997z"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M51.798,17.859l2.828-2.829c1.574-1.566,1.562-4.094,0-5.657 c-1.559-1.567-4.09-1.567-5.652-0.004l-2.829,2.836c-1.562,1.555-1.562,4.086,0,5.649C47.699,19.426,50.239,19.418,51.798,17.859z"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M32.003,11.995c2.207,0.016,4-1.789,4-3.992v-4 c0-2.219-1.789-4-4-4c-2.211-0.008-4,1.781-4,3.993l0.008,4.008C28.003,10.206,29.792,11.995,32.003,11.995z"></path> <path fill-rule="evenodd" clip-rule="evenodd"  d="M12.212,17.855c1.555,1.562,4.079,1.562,5.646-0.004 c1.574-1.551,1.566-4.09,0.008-5.649l-2.829-2.828c-1.57-1.571-4.094-1.559-5.657,0c-1.575,1.559-1.575,4.09-0.012,5.653 L12.212,17.855z"></path> </g> </g></svg>
+                                    <svg id="drc" role="img" viewBox="0 0 32.00 32.00" width="20"  class=" ml-2 dark:fill-white transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg"  stroke="#000000" stroke-width="0.00032" transform="rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Lager_94" data-name="Lager 94" transform="translate(0)"> <path id="Path_70" data-name="Path 70" d="M12.516,4.509A12,12,0,0,0,22.3,19.881,12.317,12.317,0,0,0,24,20a11.984,11.984,0,0,0,3.49-.514,12.1,12.1,0,0,1-9.963,8.421A12.679,12.679,0,0,1,16,28,12,12,0,0,1,12.516,4.509M16,0a16.5,16.5,0,0,0-2.212.15A16,16,0,0,0,16,32a16.526,16.526,0,0,0,2.01-.123A16.04,16.04,0,0,0,31.85,18.212,16.516,16.516,0,0,0,32,15.944,1.957,1.957,0,0,0,30,14a2.046,2.046,0,0,0-1.23.413A7.942,7.942,0,0,1,24,16a8.35,8.35,0,0,1-1.15-.08,7.995,7.995,0,0,1-5.264-12.7A2.064,2.064,0,0,0,16.056,0Z" ></path> </g> </g></svg>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="flex items-center px-4">
+                    <div class=" items-center justify-center hidden lg:block">
+                        <div class="flex flex-wrap">
+                            <span class="mr-2 text-sm text-salte-500"></span>
+                            <input type="checkbox" class="hidden" id="darks">
+                            <label for="darks">
+                                <div class="flex h-6 w-9 cursor-pointer items-center rounded-full bg-slate-300 p-1">
+                                    <div class="toggle-circle h-4 w-4 rounded-full bg-coklat2 transition duration-300 ease-in-out">
+
+                                    </div>
+                                </div>
+                            </label>
+                            <svg id="drlg" role="img" width="20" class=" ml-2 dark:fill-white transition duration-150 ease-in-out hidden" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 64.00 64.00" enable-background="new 0 0 64 64" xml:space="preserve" stroke="#000000" stroke-width="0.00064"><g  stroke-width="0"></g><g  stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <circle fill-rule="evenodd" clip-rule="evenodd" cx="32.003" cy="32.005" r="16.001"></circle> <path fill-rule="evenodd" clip-rule="evenodd" d="M12.001,31.997c0-2.211-1.789-4-4-4H4c-2.211,0-4,1.789-4,4 s1.789,4,4,4h4C10.212,35.997,12.001,34.208,12.001,31.997z"></path> <path fill-rule="evenodd" clip-rule="evenodd"d="M12.204,46.139l-2.832,2.833c-1.563,1.562-1.563,4.094,0,5.656 c1.562,1.562,4.094,1.562,5.657,0l2.833-2.832c1.562-1.562,1.562-4.095,0-5.657C16.298,44.576,13.767,44.576,12.204,46.139z"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M32.003,51.999c-2.211,0-4,1.789-4,4V60c0,2.211,1.789,4,4,4 s4-1.789,4-4l-0.004-4.001C36.003,53.788,34.21,51.999,32.003,51.999z"></path> <path fill-rule="evenodd" clip-rule="evenodd"  d="M51.798,46.143c-1.559-1.566-4.091-1.566-5.653-0.004 s-1.562,4.095,0,5.657l2.829,2.828c1.562,1.57,4.094,1.562,5.656,0s1.566-4.09,0-5.656L51.798,46.143z"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M60.006,27.997l-4.009,0.008 c-2.203-0.008-3.992,1.781-3.992,3.992c-0.008,2.211,1.789,4,3.992,4h4.001c2.219,0.008,4-1.789,4-4 C64.002,29.79,62.217,27.997,60.006,27.997z"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M51.798,17.859l2.828-2.829c1.574-1.566,1.562-4.094,0-5.657 c-1.559-1.567-4.09-1.567-5.652-0.004l-2.829,2.836c-1.562,1.555-1.562,4.086,0,5.649C47.699,19.426,50.239,19.418,51.798,17.859z"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M32.003,11.995c2.207,0.016,4-1.789,4-3.992v-4 c0-2.219-1.789-4-4-4c-2.211-0.008-4,1.781-4,3.993l0.008,4.008C28.003,10.206,29.792,11.995,32.003,11.995z"></path> <path fill-rule="evenodd" clip-rule="evenodd"  d="M12.212,17.855c1.555,1.562,4.079,1.562,5.646-0.004 c1.574-1.551,1.566-4.09,0.008-5.649l-2.829-2.828c-1.57-1.571-4.094-1.559-5.657,0c-1.575,1.559-1.575,4.09-0.012,5.653 L12.212,17.855z"></path> </g> </g></svg>
+                            <svg id="drcg" role="img" viewBox="0 0 32.00 32.00" width="20"  class=" ml-2 dark:fill-white transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg"  stroke="#000000" stroke-width="0.00032" transform="rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Lager_94" data-name="Lager 94" transform="translate(0)"> <path id="Path_70" data-name="Path 70" d="M12.516,4.509A12,12,0,0,0,22.3,19.881,12.317,12.317,0,0,0,24,20a11.984,11.984,0,0,0,3.49-.514,12.1,12.1,0,0,1-9.963,8.421A12.679,12.679,0,0,1,16,28,12,12,0,0,1,12.516,4.509M16,0a16.5,16.5,0,0,0-2.212.15A16,16,0,0,0,16,32a16.526,16.526,0,0,0,2.01-.123A16.04,16.04,0,0,0,31.85,18.212,16.516,16.516,0,0,0,32,15.944,1.957,1.957,0,0,0,30,14a2.046,2.046,0,0,0-1.23.413A7.942,7.942,0,0,1,24,16a8.35,8.35,0,0,1-1.15-.08,7.995,7.995,0,0,1-5.264-12.7A2.064,2.064,0,0,0,16.056,0Z" ></path> </g> </g></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="pt-60 justify-items-center bg-cover bg-center bg-no-repeat h-[700px] " style="background-image: url(dist/img/back/b1.jpg);">
+        <div class="container">
+            <div class="flex flex-wrap">
+
+                <div class="w-full text-center self-center px-4 ">
+                    <h1 class=" text-white font-semibold text-3xl font-giga lg:text-5xl my-4 drop-shadow-xl">Selamat Datang Di Coffe Sanjaya</h1>
+                    <h2 class=" text-white font-medium text-lg my-5 font-mons"><span class="text-dark lg:text-xl drop-shadow-xl">"Nikmati kopi terbaik dengan suasana yang nyaman"</span></h2>
+                    <a href="#ten" class=" mt-4 text-white font-semibold focus:outline-2 focus:outline-offset-2 focus:outline-coklat1 bg-primary py-3 px-8 rounded-lg hover:shadow-xl transition duration-300 ease-in-out bg-coklat1 hover:bg-coklat2     ">Tentang Kami</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="ten" class="pt-16 dark:bg-bgdark dark:text-white justify-items-center self-center">
+        <div class="container">
+            <div class="flex flex-wrap">
+
+                <div class=" w-full py-4 text-white font-giga self-center text-center bg-gradient-to-r from-transparent from-0% via-coklat2 via-50% to-transparent to-100% ...">
+
+                    <h1 class="font-bold text-3xl lg:text-5xl">Tentang Kami</h1>
+                </div>
+
+                <div class="w-full flex flex-wrap auto-cols-max text-center self-center px-4 mt-10 lg:w-1/2">
+                   <img src="dist/img/about/WhatsApp Image 2025-01-22 at 13.24.09 (1).jpeg" alt="" class="lg:w-[650px]">
+                   
+                </div>
+
+                <div class="w-full text-center self-center px-4 mt-10 lg:w-1/2 lg:text-left">
+                    <p class="font-mons text-md">Di tengah hiruk pikuk kota, sebuah kedai kopi baru bernama Coffee Sanjaya Group hadir membawa warna baru dalam dunia kuliner dan tempat nongkrong di jalan Veteran Helvetia pasar V. Berlokasi strategis di jantung kota, dengan desain interior yang modern dan nyaman.
+                        <br><br>
+                        <span class="hidden lg:block lg:mb-6">
+                        Visi <br>
+                        Menjadi pelopor kedai kopi yang tidak hanya menyajikan rasa terbaik, tetapi juga membangun koneksi antar individu dalam suasana yang nyaman dan inspiratif.
+                        <br><br>
+                        Misi <br>
+                        1. Menyediakan kopi berkualitas premium. <br>
+                        2. Menciptakan suasana yang nyaman dan inspiratif bagi pengunjung. <br>
+                        3. Menjadi wadah bagi komunitas untuk bertemu, berdiskusi, dan berbagi ide kreatif.
+                        </span>
+             
+                        Sanjaya Coffee Group berharap bisa menjadi lebih dari sekadar kedai kopi. Tempat ini ingin menjadi rumah kedua bagi para pengunjung, sebuah ruang di mana cerita, ide, dan kreativitas terus mengalir bersama secangkir kopi hangat.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="men" class="pt-16 dark:bg-bgdark dark:text-white justify-items-center self-center">
+        <div class="container">
+            <div class="flex flex-wrap">
+
+                <div class=" w-full py-4 self-center text-white font-giga text-center bg-gradient-to-r from-transparent from-0% via-coklat2 via-50% to-transparent to-100% ...">
+
+                    <h1 class="font-bold text-3xl lg:text-5xl">Menu </h1>
+                </div>
+
+                <div class=" justify-center w-full flex flex-wrap self-center items-center gap-6 text-center px-4 mt-10 lg:flex">
+                   <img src="dist/img/menu/1.png" alt="" class="w-96 h-auto lg:w-[400px] ">
+                   <img src="dist/img/menu/1.png" alt="" class="w-96 h-auto lg:w-[400px]">
+                   <img src="dist/img/menu/1.png" alt="" class="w-96 h-auto lg:w-[400px]">
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="lok" class="pt-16 pb-10 dark:bg-bgdark dark:text-white justify-items-center items-center self-center">
+        <div class="container">
+            <div class="flex flex-wrap">
+
+                <div class=" w-full py-4 self-center text-white font-giga text-center bg-gradient-to-r from-transparent from-0% via-coklat2 via-50% to-transparent to-100% ...">
+
+                    <h1 class="font-bold text-3xl lg:text-5xl">Lokasi</h1>
+                </div>
+
+                <div class=" justify-center w-full flex flex-wrap self-center items-center gap-6 text-center px-4 mt-10 lg:flex">
+                    <h1 class="text-2xl lg:text-3xl">Kunjungi Lokasi Kami atau Hubungi Kami Hari Ini</h1>
+                </div>
+                <div class=" justify-center w-full flex flex-wrap self-center items-center gap-6 text-center px-4 mt-10 lg:flex">
+                    <p class="flex"><svg xmlns="http://www.w3.org/2000/svg" width="20px" class="fill-current mr-2" viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M384 476.1L192 421.2l0-385.3L384 90.8l0 385.3zm32-1.2l0-386.5L543.1 37.5c15.8-6.3 32.9 5.3 32.9 22.3l0 334.8c0 9.8-6 18.6-15.1 22.3L416 474.8zM15.1 95.1L160 37.2l0 386.5L32.9 474.5C17.1 480.8 0 469.2 0 452.2L0 117.4c0-9.8 6-18.6 15.1-22.3z"/></svg>Coffee Sanjaya Group</p>
+                    <p class="flex"><svg xmlns="http://www.w3.org/2000/svg" width="20px" class="fill-current mr-2" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>0813-6181-5764</p>
+                    <p class="flex"><svg xmlns="http://www.w3.org/2000/svg" width="20px" class="fill-current mr-2" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>Buka dari jam 10:00 WIB - 04:00 WIB</p>
+                </div>
+                
+                <div class="justify-center w-full flex flex-wrap self-center items-center gap-6 text-center px-4 mt-10 lg:flex">
+                    <iframe class="w-64 h-56 lg:w-[700px] lg:h-96" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1311.8163063589823!2d98.65899294553289!3d3.634914422379513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30312d02090a911b%3A0x8e366af2dd039f88!2sCoffee%20Sanjaya%20Group!5e0!3m2!1sen!2sid!4v1738050934271!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                
+
+
+
+            </div>
+        </div>
+    </section>  
+
+
+    <footer class="bg-coklat2 pt-5 md:pt-5  justify-items-center ">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 mb-5 text-white font-medium md:w-1/2 text-center">
+                    <h2 class="font-bold font-jdl text-2xl text-white mt-3">Hubungi Kami</h2>
+                    <p class="font-isi">Jl. Veteran, Helvetia, Kec. Labuhan Deli, Kabupaten Deli Serdang, Sumatera Utara 20373</p>
+                    <p class="font-medium font-isi text-sm text-white text-center hidden lg:block">©️2024 Four.a . All rights reserved. </p>
+                </div>
+                
+                <div class="w-full px-4 mb-5 md:border-l border-white  md:w-1/2">
+                    <a href="https://www.instagram.com/sanjaya.coffe/" class="my-4 font-medium text-lg text-white text-center flex justify-center hover:text-blue-400 transition duration-300 ease-in-out"><svg xmlns="http://www.w3.org/2000/svg" width="30px" class="fill-current mr-2" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>@sanjaya.coffee</a>
+                    <p class="font-medium text-sm font-isi text-white text-center lg:hidden">©️2024 Sanjaya Group . All rights reserved. </p>
+                    <p class="font-medium text-sm font-isi text-white text-center">Designed and Developed by <a href="https://www.instagram.com/harys_rusty/" class="text-isi font-bold text-blue-500">@Harys</a></p>
+                </div>
+            </div>
+        </div>
+</footer>
+
+
+
+    <script src="dist/js/script.js"></script>
+</body>
+</html>
